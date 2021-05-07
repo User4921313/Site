@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta> 
+  <title>Новости</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Girassol';
+            src: url('Girassol/Girassol-Regular.eot');
+            src: url('Girassol/Girassol-Regular.eot') format('embedded-opentype'), 
+            url('Girassol/Girassol-Regular.woff')format('woff'), 
+            url('Girassol/Girassol-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal}
+
+        .base 
+            {background-image: url(../Home/picture0.jpg);
+            background-size: 100%;
+            font-family: Girassol-Regular;
+            font-size: 20px}
+
+        .table1 
+            {font-size: 100%; 
+            width: 100%;
+            height: 100%} 
+
+        .container {
+            width: 100%; /* Ширина слоя */
+            margin: 0 auto; /* Выравнивнить весь блок по центру */
+            background: #ededed;} /* Цвет фона левой колонки */
+
+        .header {
+            font-size: 36px; /* Размер текста в шапке */
+            text-align: center; /* Выравнивание текст шапки по центру */
+            padding: 5px; /* Отступы внутри блока шапки */
+            background: #d1d1d1; /* Цвет фона шапки */
+            color: #000;} /* Цвет текста */  
+
+        .header img {
+            float: left;
+            width: 190px;
+            height: 190px;
+            background: #555;}
+
+        .header h1 {
+           position: relative;
+           top: -50px;
+           left: center;}
+
+        .container{
+           position: relative;}
+
+        .header {
+           position: absolute;
+           bottom: 100px;
+           left: 410px;
+           top: 80px;
+           right: 410px;
+           background-color: #d1d1d1;
+           opacity: .7;
+           color: #000;
+           margin-left: auto;
+           margin-right: auto;
+           margin-bottom: auto;
+           margin-top: auto;}
+  
+        .image1 {
+           position: relative;
+           top: 0;
+           left: 130px;}
+
+        .image2 {
+           position: absolute;
+           top: 20px;
+           left: 0px;}
+
+        .image3 {
+           position: absolute;
+           top: 20px;
+           right: 0px;}
+        
+        .leftimg1 {
+           float:left; /* Выравнивание по левому краю */
+           margin: 7px 7px 7px 0;} /* Отступы вокруг картинки */
+
+        .rightimg  {
+           float: right; /* Выравнивание по правому краю  */ 
+           margin: 7px 0 7px 7px;} /* Отступы вокруг картинки */ 
+        .bottomimg {
+           float: bottom; /* Выравнивание по нижнему краю  */ 
+           margin: 7px 7px 0 7px;} /* Отступы вокруг картинки */
+
+        h2 {
+           font-size: 24px;}   
+        img[src^="news"] {margin: 2%} 
+ 
+    </style>
+</head>
+<body class="base">
+     <div class="container">
+    <img class="image1" src="../Home/papyrus1.png" width="1200" height="270" alt="background-image">
+    <img class="image2" src="../Home/blazon.png" width="200" height="200" alt="логотип">
+    <img class="image3" src="../Home/blazon.png" width="200" height="200" alt="логотип">
+    <div class="header">
+    <h1>Хогвартские вести</h1>
+    </div>
+  </div>
+   
+   
+<table border="5"  class="table1">
+           <thead>
+               <tr>
+                   <th colspan="3";style="width: 100%; ">
+                       <a href="../Home/Home.html">Главная</a>
+                       <a href="News.html">Новости</a>
+                       <a href="../Gallery/Gallery.html">Галерея</a>
+                       <a href="../Contact/Contact.html">Контакты</a>
+                   </th>
+
+               </tr>
+           </thead>
+
+           <tbody>
+               <tr>
+                   <td><img src="news2.jpg" alt="Фото2" width="96%" align="left">
+                     <h2>По стопам Мародёров!</h2>
+                     <p>kjsdbfjk</p>
+                   </td>
+                   <td rowspan="2"><img src="news1.jpg" alt="Фото1" width="96%" align="bottom">
+                    <h2>Львы и Змеи зарыли топор войны!?</h2>
+                    <p>dvsfksdkgsklklf</p>
+                   </td>
+                   <td><img src="news4.jpg" alt="Фото4" width="%" align="righ">
+                    <h2>Грифон в Хогвартсе или Хагрид опять за старое...</h2>
+                    <p>rgdh</p>
+                   </td>
+               </tr>
+               <tr>
+                   <td><img src="news3.jpg" alt="Фото3" width="132" height="174" class="leftimg">
+                    <h2>Львы и Змеи зарыли топор войны!?</h2>
+                   </td>
+                   <td><img src="news5.jpg" alt="Фото5" width="132" height="174" class="righimg">
+                    <h2>Львы и Змеи зарыли топор войны!?</h2>
+                   </td>
+               </tr>
+                   
+           </tbody>
+ 
+
+       </table>   
+            
+    
+</body>
+</html>

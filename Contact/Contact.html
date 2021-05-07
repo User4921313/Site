@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta> 
+	<title>Контакты</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Girassol';
+            src: url('Girassol/Girassol-Regular.eot');
+            src: url('Girassol/Girassol-Regular.eot') format('embedded-opentype'), 
+            url('Girassol/Girassol-Regular.woff')format('woff'), 
+            url('Girassol/Girassol-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal}
+
+        .base 
+            {background-image: url(../Home/picture0.jpg);
+            background-size: 100%;
+            font-family: Girassol-Regular;
+            font-size: 20px}
+
+        .table1 
+            {font-size: 100%; 
+            width: 100%;
+            height: 100%} 
+
+        .container {
+            width: 100%; /* Ширина слоя */
+            margin: 0 auto; /* Выравнивнить весь блок по центру */
+            background: #ededed;} /* Цвет фона левой колонки */
+
+        .header {
+            font-size: 36px; /* Размер текста в шапке */
+            text-align: center; /* Выравнивание текст шапки по центру */
+            padding: 5px; /* Отступы внутри блока шапки */
+            background: #d1d1d1; /* Цвет фона шапки */
+            color: #000;} /* Цвет текста */  
+
+        .header img {
+            float: left;
+            width: 190px;
+            height: 190px;
+            background: #555;}
+
+        .header h1 {
+           position: relative;
+           top: -50px;
+           left: center;}
+
+        .container{
+           position: relative;}
+
+        .header {
+           position: absolute;
+           bottom: 100px;
+           left: 410px;
+           top: 80px;
+           right: 410px;
+           background-color: #d1d1d1;
+           opacity: .7;
+           color: #000;
+           margin-left: auto;
+           margin-right: auto;
+           margin-bottom: auto;
+           margin-top: auto;}
+  
+        .image1 {
+           position: relative;
+           top: 0;
+           left: 130px;}
+
+        .image2 {
+           position: absolute;
+           top: 20px;
+           left: 0px;}
+
+        .image3 {
+           position: absolute;
+           top: 20px;
+           right: 0px;}
+
+        .container1 {
+           width: 320px;
+           background-color: #bababa;
+           margin: 0 auto;
+           padding: 20px;} 
+        form input:not([type="checkbox","radio"]){width: 100%}
+        label {display: inline-block;
+        width: 100%}    
+
+
+ 
+
+
+    </style>
+</head>
+<body class="base">
+     <div class="container">
+    <img class="image1" src="../Home/papyrus1.png" width="1200" height="270" alt="background-image">
+    <img class="image2" src="../Home/blazon.png" width="200" height="200" alt="логотип">
+    <img class="image3" src="../Home/blazon.png" width="200" height="200" alt="логотип">
+    <div class="header">
+    <h1>Хогвартские вести</h1>
+    </div>
+  </div>
+   
+   
+<table border="5"  class="table1">
+           <thead>
+               <tr>
+                   <th colspan="3" style="width: 100%; ">
+                       <a href="../Home/Home.html">Главная</a>
+                       <a href="../News/News.html">Новости</a>
+                       <a href="../Gallery/Gallery.html">Галерея</a>
+                       <a href="Contact.html">Контакты</a>
+                   </th>
+
+               </tr>
+           </thead>
+
+           <tbody>
+               <tr>
+                   <td colspan="3">
+                    <p><center>По всем вопросам, рекламе и предложениям о сотрудничестве вы можете обращаться, заполнив нужную форму.</center> </p>
+                    <p><center>Также будем рады получить отзывы о нашей газете</center></p>
+                   </td>
+                </tr>  
+                <tr>  
+                    <td>
+                    <p><center>Вопросы?</center></p> 
+                    <div class="container1">
+     <form method="GET" id="search">
+
+        <p> 
+          <label for="name">ФИО</label>
+          <input type="text" name="queru" id="name" placeholder="ФИО"> </p>    
+      
+        <p>
+          <label for="email">Почта</label>
+          <input type="text" name="email" id="email" placeholder="Почта"> </p>  
+
+        <div>
+          <label for="faculty">Факультет</label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Гриффиндор
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Когтевран
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Пуффендуй
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Слизерин
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Преподаватель
+          </label>
+        </div>
+        <p></p>
+
+         <div>
+          <p>
+          <label for="cource">Курс</label> 
+          </p>
+          
+
+        <p>
+          
+          <select name="cource" id="cource">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>Преподаватель</option>
+          </select>
+        </p>  
+        </div>
+
+        <p>
+          <label for="About">Задайте свой вопрос</label>
+          <textarea rows="10" cols="40" id="About" placeholder="Вопросы"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+
+       
+
+    </form>
+
+  </div>
+               </td>
+               <td>
+                 <p><center>Реклама?</center></p> 
+                    <div class="container1">
+     <form method="GET" id="search">
+
+        <p> 
+          <label for="name">ФИО</label>
+          <input type="text" name="queru" id="name" placeholder="ФИО"> </p>    
+      
+        <p>
+          <label for="email">Почта</label>
+          <input type="text" name="email" id="email" placeholder="Почта"> </p>  
+        <div>
+          <label for="faculty">Факультет</label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Гриффиндор
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Когтевран
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Пуффендуй
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Слизерин
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Преподаватель
+          </label>
+        </div>  
+
+        
+        <p></p>
+
+         <div>
+          <p>
+          <label for="cource">Курс</label> 
+          </p>
+          
+
+        <p>
+          
+          <select name="cource" id="cource">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>Преподаватель</option>
+          </select>
+        </p>  
+        </div>
+
+        <p>
+          <label for="About">Опишите рекламу</label>
+          <textarea rows="10" cols="40" id="About" placeholder="Реклама"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+
+       
+
+    </form>
+
+  </div>
+               </td>
+               <td>
+                 <p><center>Сотрудничество?</center></p> 
+                    <div class="container1">
+     <form method="GET" id="search">
+
+        <p> 
+          <label for="name">ФИО</label>
+          <input type="text" name="queru" id="name" placeholder="ФИО"> </p>    
+      
+        <p>
+          <label for="email">Почта</label>
+          <input type="text" name="email" id="email" placeholder="Почта"> </p>  
+        <div>
+          <label for="faculty">Факультет</label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Гриффиндор
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Когтевран
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Пуффендуй
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Слизерин
+          </label>
+          <label>
+            <input type="checkbox" name="faculty" >
+            Преподаватель
+          </label>
+        </div>  
+
+        
+        <p></p>
+
+         <div>
+          <p>
+          <label for="cource">Курс</label> 
+          </p>
+          
+
+        <p>
+          
+          <select name="cource" id="cource">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>Преподаватель</option>
+          </select>
+        </p>  
+        </div>
+
+        <p>
+          <label for="About">Опишите суть сотрудничества</label>
+          <textarea rows="10" cols="40" id="About" placeholder="Сотрудничество"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+
+       
+
+    </form>
+
+  </div>
+               </td>    
+           </tbody>
+ 
+
+       </table>   
+            
+    
+</body>
+</html>
